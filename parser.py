@@ -4,7 +4,7 @@ from telethon.tl.functions.messages import GetHistoryRequest
 api_id = 12345  #your api id
 api_hash = 'asdfghjkl123' #your api hash 
 name = 'parsing_session' #any name
-chat = 'https://t.me/...'  # Канал куда парсить
+chat = 'https://t.me/...'  # Канал откуда парсить
 
 
 with TelegramClient(name, api_id, api_hash) as client: 
