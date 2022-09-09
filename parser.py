@@ -11,5 +11,6 @@ with TelegramClient(name, api_id, api_hash) as client:
 
     for message in client.iter_messages(chat): 
         user = client.get_entity(message.sender_id) 
-        
-        print(f'Имя отправителя : {user.username}, Id отправителя {message.sender_id}, Сообщение : {message.text}')
+        message_dt = datetime.datetime.now()
+        print(f'Когда: {message_dt}  Имя отправителя : {user.username}, Id отправителя {message.sender_id}, Сообщение : {message.text}')
+
